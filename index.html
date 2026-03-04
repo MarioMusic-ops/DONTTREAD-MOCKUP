@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don’t Tread Coffee Company</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__text">Free Shipping on Orders Over $99</p>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#" aria-label="Home">
+        <img class="brand__logo" src="assets/DontTreadCoffee_Logo_Web.svg" alt="Don’t Tread Coffee Company Logo" />
+        <span class="brand__name"></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="#featured">Shop</a>
+        <a class="nav__link" href="#heritage">Heritage</a>
+        <a class="nav__link" href="#process">Process</a>
+        <a class="nav__link" href="#reviews">Reviews</a>
+      </nav>
+
+      <div class="header__actions">
+  <a class="btn btn--ghost" href="#heritage">Our Story</a>
+  <a class="btn btn--primary" href="#featured">Shop Now</a>
+
+  <!-- Cart -->
+  <a class="cart" href="#cart" aria-label="View Cart">
+    <svg class="cart__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <circle cx="9" cy="20" r="1.5"></circle>
+      <circle cx="18" cy="20" r="1.5"></circle>
+      <path d="M2 3h3l2.5 12h11l2-8H6"></path>
+    </svg>
+    <span class="cart__count">0</span>
+  </a>
+</div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">American Heritage • Small Batch • Bold Flavor</p>
+
+          <h1 class="hero__title">
+            Crafted with <span class="text-accent">American grit</span>.
+            Roasted for the bold.
+          </h1>
+
+          <p class="hero__subtitle">
+            Premium, fresh-roasted coffee with a heritage-first identity—built on freedom,
+            discipline, and unforgettable flavor.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#featured">Shop Rattlesnake Blend</a>
+            <a class="btn btn--ghost" href="#heritage">See the Heritage</a>
+          </div>
+
+          <div class="hero__trust">
+            <div class="trustpill">
+              <span class="trustpill__label">Roast Profile</span>
+              <span class="trustpill__value">Bold • Dark Chocolate • Smoke</span>
+            </div>
+            <div class="trustpill">
+              <span class="trustpill__label">Roasted</span>
+              <span class="trustpill__value">In the USA</span>
+            </div>
+            <div class="trustpill">
+              <span class="trustpill__label">Freshness</span>
+              <span class="trustpill__value">Small-batch weekly</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <!-- Replace hero-bag.jpg with your best cinematic product shot -->
+          <div class="media-card">
+            <img
+              class="media-card__img"
+              src="assets/hero_coffee_background2.png"
+              alt="Matte black coffee bag with yellow label"
+              loading="eager"
+            />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BRAND STATEMENT ========== -->
+    <section class="statement" aria-label="Brand statement">
+      <div class="container statement__inner">
+        <p class="statement__kicker">Not just coffee. Conviction.</p>
+        <h2 class="statement__title">
+          We don’t just roast beans — we roast <span class="text-secondary">conviction</span>.
+        </h2>
+        <p class="statement__text">
+          A premium craft experience with an American heritage backbone. Clean design. Strong flavor.
+        
+        </p>
+      </div>
+    </section>
+
+<!-- ========== HERITAGE STORY (WITH IMAGE) ========== -->
+<section class="heritage-story heritage-story--with-media" id="heritage" aria-label="Heritage story">
+  <div class="container heritage-story__inner">
+    <div class="heritage-story__content">
+      <p class="eyebrow heritage-story__eyebrow">Heritage • Craft • Conviction</p>
+      <h2 class="heritage-story__title">Rooted in Freedom. Roasted with Intention.</h2>
+
+      <p class="heritage-story__lead">
+        Don’t Tread Coffee Company was built on principle — a commitment to quality,
+        independence, and the enduring spirit of American craftsmanship.
+        Our beans are carefully sourced from respected growing regions across Africa
+        and Central America, then roasted in small batches to deliver bold,
+        uncompromising flavor in every cup.
+      </p>
+
+      <p class="heritage-story__text">
+        We believe in liberty, personal responsibility, and standing firm in what matters.
+        No trends. No noise. Just exceptional coffee with backbone.
+      </p>
+
+      <div class="heritage-story__cta">
+        <a class="btn btn--ghost" href="#process">See the Process</a>
+      </div>
+    </div>
+
+    <div class="heritage-story__media">
+      <figure class="heritage-story__figure">
+        <img
+          class="heritage-story__img"
+          src="assets/heritage_section_image.png"
+          alt="Coffee beans roasting in small batches"
+          loading="lazy"
+        />
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <!-- ========== FEATURED PRODUCTS ========== -->
+    <section class="featured" id="featured" aria-label="Featured products">
+      <div class="container featured__inner">
+        <div class="section-head">
+          <h2 class="section-head__title">Featured Coffee</h2>
+          <p class="section-head__subtitle">Premium roast profiles built for everyday discipline.</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <article class="product-card">
+            <a class="product-card__media" href="#">
+              <img class="product-card__img" src="assets/rattlesnake blend_website_ready2.png" alt="Rattlesnake Blend bag" loading="lazy" />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">RATTLESNAKE BLEND</h3>
+              <p class="product-card__desc">Big body • Dark chocolate • Smoke</p>
+              <div class="product-card__meta">
+                <span class="chip">Dark Roast</span>
+                <span class="chip chip--navy">Best Seller</span>
+              </div>
+              <div class="product-card__actions">
+                <a class="btn btn--primary btn--sm" href="#">Shop Now</a>
+                <a class="btn btn--ghost btn--sm" href="#">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="product-card">
+            <a class="product-card__media" href="#">
+              <img class="product-card__img" src="assets/betsy_ross_ blend_website_ready1.png" alt="Betsy Ross bag" loading="lazy" />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">BETSY ROSS BLEND</h3>
+              <p class="product-card__desc">Milk Chocolate • Dried Fruit • Light Smoke</p>
+              <div class="product-card__meta">
+                <span class="chip">Medium Roast</span>
+                <span class="chip chip--outline">New</span>
+              </div>
+              <div class="product-card__actions">
+                <a class="btn btn--primary btn--sm" href="#">Shop Now</a>
+                <a class="btn btn--ghost btn--sm" href="#">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3 -->
+          <article class="product-card">
+            <a class="product-card__media" href="#">
+              <img class="product-card__img" src="assets/reee_roast_website_ready1.png" alt="REEE ROAST bag" loading="lazy" />
+            </a>
+            <div class="product-card__body">
+              <h3 class="product-card__title">REEE ROAST</h3>
+              <p class="product-card__desc">Smoke • Dark Chocolate • Smooth</p>
+              <div class="product-card__meta">
+                <span class="chip">Dark Roast</span>
+                <span class="chip chip--navy">Limited</span>
+              </div>
+              <div class="product-card__actions">
+                <a class="btn btn--primary btn--sm" href="#">Shop Now</a>
+                <a class="btn btn--ghost btn--sm" href="#">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HERITAGE / PATRIOTIC SECTION (NAVY) ========== -->
+    <section class="heritage" id="heritage" aria-label="American heritage">
+      <div class="heritage__flagwash" aria-hidden="true"></div>
+
+      <div class="container heritage__inner">
+        <div class="heritage__media">
+          <img
+            class="heritage__img"
+            src="assets/folded_flag.png"
+            alt="Roastery / American heritage image"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="heritage__content">
+          <p class="eyebrow eyebrow--light">American Heritage</p>
+          <h2 class="heritage__title">
+            Built on freedom. <span class="text-secondary">Brewed for the bold.</span>
+          </h2>
+          <p class="heritage__text">
+            We keep the brand premium — not loud. Our patriotic identity shows up as heritage:
+            disciplined craft, honest sourcing, and coffee that respects your standards.
+          </p>
+
+          <ul class="bullet">
+            <li class="bullet__item"><span class="bullet__icon">★</span> Small-batch roasted in the tradition of American craft</li>
+            <li class="bullet__item"><span class="bullet__icon">★</span> Carefully sourced beans from respected growing regions</li>
+            <li class="bullet__item"><span class="bullet__icon">★</span> Built for bold mornings and long days</li>
+          </ul>
+
+          <div class="heritage__cta">
+            <a class="btn btn--secondary" href="#process">How It’s Roasted</a>
+            <a class="btn btn--ghost btn--ghost-light" href="#reviews">Read Reviews</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+  <div class="container">
+
+    <p class="eyebrow">Craft & Discipline</p>
+    <h2 class="process__title">From Bean to Bold Cup</h2>
+
+    <div class="process__grid">
+
+      <div class="process__step">
+        <div class="process__icon">🌍</div>
+        <h3>Sourcing</h3>
+        <p>Beans sourced from respected farms across Africa and Central America.</p>
+      </div>
+
+      <div class="process__step">
+        <div class="process__icon">🔥</div>
+        <h3>Roasting</h3>
+        <p>Small-batch roasting designed to bring out bold, uncompromising flavor.</p>
+      </div>
+
+      <div class="process__step">
+        <div class="process__icon">⏳</div>
+        <h3>Resting</h3>
+        <p>Each roast is rested to allow the flavor profile to fully develop.</p>
+      </div>
+
+      <div class="process__step">
+        <div class="process__icon">☕</div>
+        <h3>Brewing</h3>
+        <p>Designed for bold mornings and strong American coffee traditions.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <section class="reviews" id="reviews">
+  <div class="container">
+
+    <p class="eyebrow">What People Say</p>
+    <h2 class="reviews__title">Trusted by Coffee Drinkers Nationwide</h2>
+
+    <div class="reviews__grid">
+
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>
+          "This is hands down the best coffee I've had in years.
+          Bold flavor without bitterness."
+        </p>
+        <span class="review__author">— James R., Texas</span>
+      </div>
+
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>
+          "You can taste the quality. Small batch roasting makes a difference."
+        </p>
+        <span class="review__author">— Sarah M., Colorado</span>
+      </div>
+
+      <div class="review">
+        <div class="review__stars">★★★★★</div>
+        <p>
+          "Perfect morning coffee. Strong, smooth, and consistent."
+        </p>
+        <span class="review__author">— Daniel T., Tennessee</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- ========== FINAL CTA (NAVY) ========== -->
+    <section class="final-cta" aria-label="Final call to action">
+      <div class="container final-cta__inner">
+        <div class="final-cta__content">
+          <h2 class="final-cta__title">Brew like you mean it.</h2>
+          <p class="final-cta__text">
+            Premium craft coffee with a heritage backbone — built for people who keep their standards high.
+          </p>
+        </div>
+        <div class="final-cta__actions">
+          <a class="btn btn--secondary" href="#featured">Shop Coffee</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/DontTreadCoffee_Logo_Web_white.svg" alt="Don’t Tread Coffee Company Logo" />
+        <p class="footer__text">Premium craft coffee with an American heritage backbone.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h3 class="footer__title">Shop</h3>
+          <a class="footer__link" href="#featured">Featured</a>
+          <a class="footer__link" href="#">All Coffee</a>
+          <a class="footer__link" href="#">Merch</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Company</h3>
+          <a class="footer__link" href="#heritage">Heritage</a>
+          <a class="footer__link" href="#process">Process</a>
+          <a class="footer__link" href="#">Contact</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Legal</h3>
+          <a class="footer__link" href="#">Shipping</a>
+          <a class="footer__link" href="#">Returns</a>
+          <a class="footer__link" href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© <span id="year"></span> Don’t Tread Coffee Company. All rights reserved.</p>
+
+        <!-- Subtle flag nod: keep it classy -->
+        <div class="flagmark" aria-label="American flag mark">
+          <span class="flagmark__stripe"></span>
+          <span class="flagmark__stripe"></span>
+          <span class="flagmark__stripe"></span>
+          <span class="flagmark__field"></span>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
