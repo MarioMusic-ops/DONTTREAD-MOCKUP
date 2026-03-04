@@ -147,12 +147,20 @@ a{ color: inherit; text-decoration: none; }
   color: #111111;
 }
 
-.brand__logo{
+/* .brand__logo{
   height: 115px;        
   width: auto;
   display: block;
-}
+} */
 
+.brand__logo{
+   height: 52px;
+   width: auto;
+   display: block;
+   transform: scale(1.35);
+   transform-origin: left center;
+}
+/*---------------------------------  */
 .brand__name{
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -160,6 +168,15 @@ a{ color: inherit; text-decoration: none; }
   white-space: nowrap;
 }
 
+@media (max-width: 980px){
+  .header__inner{
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "brand actions"
+      "nav nav";
+  }
+}
+/* --------------------------------- */
 .nav{
   display: inline-flex;
   align-items: center;
@@ -1111,4 +1128,5 @@ a{ color: inherit; text-decoration: none; }
 @media (max-width: 520px){
   .topbar__inner{ flex-direction: column; align-items: flex-start; }
   .footer__cols{ grid-template-columns: 1fr; }
+
 }
